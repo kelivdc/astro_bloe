@@ -1,0 +1,21 @@
+---
+import '@fontsource/nunito';
+import Footer from '../components/Footer.astro';
+import Navbar from '../components/Navbar.astro';
+const { title } = Astro.props;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />		
+		<title>{title}</title>		
+	</head>
+	<body class="bg-[#f5f8fb]">
+		<Navbar />
+		<div class="max-w-screen-lg m-auto mt-4 bg-white rounded-md p-4">
+			<slot />
+		</div>
+	</body>
+	<Footer />
+</html>
