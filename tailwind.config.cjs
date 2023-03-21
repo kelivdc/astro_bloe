@@ -6,7 +6,14 @@ module.exports = {
 			fontFamily: {
 				sans: ['Nunito','sans-serif'],
 			},
+			colors: {
+				colorA: '#3A98B9',
+				colorB: '#FFF1DC',
+				colorC: '#E8D5C4',
+				colorD: '#EEEEEE'
+			}
 		},
+		
 	},
 	plugins: [],
 }
