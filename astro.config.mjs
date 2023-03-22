@@ -9,20 +9,6 @@ import htmlMinify from "@frontendista/astro-html-minify";
 export default defineConfig({
   output: "server",
   outDir: "./build",
-  integrations: [tailwind(), compress({
-    css: false,
-			html: false,
-			img: false,
-			js: false,
-			svg: false,
-  }), htmlMinify({
-    reportCompressedSize: true,
-    htmlTerserMinifierOptions: {
-      removeComments: false,
-      preserveLineBreaks: true,
-      collapseWhitespace: true,
-      noNewlinesBeforeTagClose: true
-    }
-  })],
+  integrations: [tailwind(), compress(), htmlMinify()],
   adapter: vercel()
 });
