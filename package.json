@@ -15,10 +15,8 @@
     "@astrojs/tailwind": "^3.1.1",
     "@astrojs/vercel": "^3.2.1",
     "@fontsource/nunito": "^4.5.12",
-    "@frontendista/astro-html-minify": "^1.0.7",
     "astro": "^2.1.5",
     "astro-compress": "^1.1.35",
-    "astro-html-minifier": "^0.4.1",
     "tailwindcss": "^3.2.7"
   },
   "devDependencies": {
