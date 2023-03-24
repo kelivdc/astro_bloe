@@ -1,28 +1,32 @@
 ---
 import Main from "../layouts/Main.astro";
-import { Image } from '@astrojs/image/components';
+import { Image } from "@astrojs/image/components";
 ---
+
 <Main title="Berita otomotif terbaru">
-	<h1>Refresh donk</h1>	
-	<Image src="https://res.cloudinary.com/damatnwia/image/upload/v1619171636/sample.jpg" width={500} height={376} format="jpg" alt="Detail" />
-	<p>Gluten adalah salah satu jenis protein yang banyak terkandung pada biji-bijian tertentu. Pada makanan, kandungan ini memiliki fungsi yang baik dalam kuliner. Misalnya pada adonan roti yang dicampur dengan gluten membuat roti menjadi lebih mengembang dan memiliki tekstur yang lebih baik.
-		Namun, tidak semua orang bisa mengonsumsi gluten. Pengidap celiac dan orang-orang yang memiliki tingkat sensitif tinggi gluten berisiko mengalami kerusakan pencernaan ketika mengonsumsinya. 
-		Lantas, apa saja makanan dengan kandungan gluten yang tinggi?.</p>
-	<p>Cupidatat aliqua tempor aute incididunt exercitation. Aute ullamco ea et est laborum culpa id ut minim cillum minim consequat exercitation. Enim voluptate quis irure Lorem ut officia tempor pariatur.
-
-Laborum sunt sunt ipsum anim cupidatat id culpa minim reprehenderit pariatur est sit. Tempor non nisi eu aute irure labore proident ad cupidatat ex nulla. Nostrud ad irure consequat anim cupidatat nostrud consectetur ad veniam exercitation. Nostrud ut elit minim ea duis ullamco dolore proident do in. Excepteur nisi ullamco elit officia commodo non dolore fugiat.
-
-Aute qui qui sint ipsum sit anim. Exercitation ex minim et irure in amet cupidatat enim ut exercitation excepteur. Minim do commodo eiusmod excepteur sunt non. Sunt ex incididunt nulla et.
-
-Ullamco mollit minim consectetur nulla fugiat pariatur consectetur magna aute anim excepteur dolor sint. Incididunt eu excepteur aliqua reprehenderit reprehenderit excepteur. Velit fugiat enim culpa enim qui dolore in irure. Anim excepteur quis adipisicing est consequat labore amet amet. Ut magna fugiat sunt deserunt quis veniam adipisicing.
-
-Ad ea aute amet ea culpa culpa magna incididunt laborum nulla. Laborum ullamco mollit irure dolor officia laboris et nostrud cupidatat ipsum Lorem consequat ipsum. Pariatur ad incididunt excepteur irure aliqua eiusmod minim officia Lorem cupidatat minim. Aliqua mollit enim non culpa amet sint. Eiusmod sit sit adipisicing occaecat Lorem commodo proident id dolor aute. Dolor cillum dolore proident nisi qui incididunt dolore exercitation voluptate non deserunt quis. Ex do amet occaecat ex id aute magna nulla magna sint qui dolor nulla laborum.
-
-Qui consequat laborum eu aliqua elit cillum est proident tempor sunt exercitation sint. Aute voluptate irure eu consectetur. Aute officia minim reprehenderit ex tempor id ut consectetur ut in. Occaecat magna laboris pariatur nostrud ipsum nulla qui laboris labore proident excepteur et veniam commodo.
-
-Ea sunt magna irure irure nisi ea. Dolore cupidatat ut officia voluptate incididunt consequat eu commodo nulla veniam. Esse pariatur mollit consequat duis cillum sint voluptate ullamco irure nulla. Proident voluptate aliquip voluptate laborum laboris culpa id dolor consequat esse. Nostrud sit dolore do commodo ad id aliqua id aute esse aliqua exercitation fugiat. Enim deserunt velit ad id nulla eiusmod ad fugiat.
-
-Magna consectetur ex esse eiusmod nisi do tempor exercitation nostrud nisi esse. Exercitation duis aute ipsum nostrud sint ea Lorem excepteur proident voluptate adipisicing. Proident aliquip nulla non nulla tempor tempor quis dolore minim laboris ea qui. Amet eiusmod mollit aliqua labore esse.
-
-Eu occaecat pariatur quis ut sint. Velit sunt magna aute aliquip do nulla mollit sint exercitation ad est. In voluptate consequat sit in do pariatur nisi duis exercitation magna nisi. Ullamco pariatur et aliquip commodo fugiat excepteur laborum anim ipsum do irure pariatur laborum. Irure culpa ea proident laborum ad cupidatat aliqua velit cillum ex laborum consequat aliquip nulla. Quis do labore enim dolor consectetur enim qui mollit ipsum magna. Culpa exercitation ut eu aute irure quis elit.</p>
+  <div class="md:flex space-x-4">
+    <div class="md:w-[65%] p-3 bg-colorD">
+      <div class="text-xl font-bold text-gray-700">HEADLINE</div>
+      <div class="pt-4">
+        <Image
+          src="https://res.cloudinary.com/damatnwia/image/upload/v1679586097/blog/8-aplikasi-jadwal-puasa-ramadhan-banyak-yang-gratisan-jja8uqhEim_lfd9km.jpg"
+          alt="headline"
+          aspectRatio="1:1"
+          width={1024}
+          height={681}
+          format="jpg"
+        />
+      </div>
+    </div>
+    <div class="md:w-[35%] bg-colorD p-3 border-t-2 border-colorA">
+      <ul class=""><div class="text-center font-bold text-cyan-700">BERITA PILIHAN</div>
+		<li class="pilihan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt amet suscipit aliquam assumenda veniam magnam. </li>
+		<li class="pilihan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt amet suscipit aliquam assumenda veniam magnam. </li>
+		<li class="pilihan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt amet suscipit aliquam assumenda veniam magnam. </li>
+	  </ul>
+    </div>
+  </div>
 </Main>
+<style>
+
+</style>

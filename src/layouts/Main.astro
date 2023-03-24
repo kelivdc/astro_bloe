@@ -15,11 +15,11 @@ const { slug } = Astro.params
     <meta name="description" content={description || 'Blog otomotif' } />
     <title>{title}</title>
   </head>
-  <body class="bg-colorD">
+  <body>
     <Navbar />
-    <div class="max-w-[1140px] m-auto bg-white">
+    <div class="max-w-[1040px] m-auto bg-white">
       <Category />
-      <div class="p-4">
+      <div class="py-4">
         <slot />
       </div>
     </div>
