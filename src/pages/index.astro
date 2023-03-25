@@ -12,29 +12,56 @@ import { Image } from "@astrojs/image/components";
           src="https://res.cloudinary.com/damatnwia/image/upload/v1679586097/blog/8-aplikasi-jadwal-puasa-ramadhan-banyak-yang-gratisan-jja8uqhEim_lfd9km.jpg"
           alt="headline"
           aspectRatio="1:1"
-          width={1024}
-          height={681}
+          width={724}
+          height={381}
           format="jpg"
         />
       </div>
     </div>
-    <div class="md:w-[35%] bg-colorD p-3 border-t-2 border-colorA">
-      <div class="text-center font-bold text-cyan-700">INFO PILIHAN</div>
-      <ul>        
-        <li class="pilihan">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          deserunt amet suscipit aliquam assumenda veniam magnam.
-        </li>
-        <li class="pilihan">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          deserunt amet suscipit aliquam assumenda veniam magnam.
-        </li>
-        <li class="pilihan">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-          deserunt amet suscipit aliquam assumenda veniam magnam.
-        </li>
-      </ul>
+    <div class="md:w-[35%] bg-colorD p-2 border-t-2 border-colorA">
+      <div class="text-center font-bold text-cyan-700 py-2">INFO PILIHAN</div>
+      <div class="pilihan">
+        <div><span class="nomor-pilihan">1</span></div>
+        <div class="line-clamp-2 -mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam soluta delectus ut! Animi sint obcaecati nesciunt odit doloribus eveniet,</div>
+      </div>
+      <div class="pilihan">
+        <div><span class="nomor-pilihan">2</span></div>
+        <div class="line-clamp-2 -mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam soluta delectus ut! Animi sint obcaecati nesciunt odit doloribus eveniet,</div>
+      </div>
+      <div class="pilihan">
+        <div><span class="nomor-pilihan">3</span></div>
+        <div class="line-clamp-2 -mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam soluta delectus ut! Animi sint obcaecati nesciunt odit doloribus eveniet,</div>
+      </div>
+      <div class="pilihan">
+        <div><span class="nomor-pilihan">4</span></div>
+        <div class="line-clamp-2 -mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam soluta delectus ut! Animi sint obcaecati nesciunt odit doloribus eveniet,</div>
+      </div>
+      <div class="pilihan">
+        <div><span class="nomor-pilihan">5</span></div>
+        <div class="line-clamp-2 -mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam soluta delectus ut! Animi sint obcaecati nesciunt odit doloribus eveniet,</div>
+      </div>
+      <div class="pilihan">
+        <div><span class="nomor-pilihan">6</span></div>
+        <div class="line-clamp-2 -mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam soluta delectus ut! Animi sint obcaecati nesciunt odit doloribus eveniet,</div>
+      </div>
+      <div class="pilihan">
+        <div><span class="nomor-pilihan">7</span></div>
+        <div class="line-clamp-2 -mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam soluta delectus ut! Animi sint obcaecati nesciunt odit doloribus eveniet,</div>
+      </div>
     </div>
   </div>
 </Main>
-<style></style>
+<style>
+  .link-pilihan {
+    @apply line-clamp-2;
+  }
+  .pilihan {
+    @apply border-b border-gray-300 py-2 flex space-x-2 relative mt-2 leading-5;
+  }
+  .pilihan:last-child {
+    @apply border-none;
+  }
+  .nomor-pilihan {
+    @apply bg-gray-500 px-2 py-1 rounded-full text-white;
+  }
+</style>
