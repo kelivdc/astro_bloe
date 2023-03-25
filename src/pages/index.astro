@@ -4,6 +4,7 @@ import { Image } from "@astrojs/image/components";
 import Pilihan from "../components/Pilihan.astro";
 import Headline from "../components/Headline.astro";
 import Terbaru from "../components/Terbaru.astro";
+import TipsPilihan from "../components/TipsPilihan.astro";
 ---
 
 <Main title="Berita otomotif terbaru">
@@ -17,8 +18,9 @@ import Terbaru from "../components/Terbaru.astro";
       </div>
       <Terbaru />
     </div>
-    <div class="md:w-[35%] bg-colorD m-2 md:m-0 p-3 border-t-[3px] border-colorA">
+    <div class="md:w-[35%] m-2 md:m-0">
       <Pilihan />
+      <TipsPilihan />
     </div>
   </div>
 </Main>

@@ -1,39 +1,40 @@
 ---
 const rows = [...Array(10)];
-
 ---
 
-<div class="text-center font-bold text-cyan-700 py-1">INFO PILIHAN</div>
-{
-  rows.map((item, index) => (
-    <div class="pilihan">
-      <div>
-        <span class="nomor-pilihan">{index + 1}</span>
+<div class="bg-colorD p-3 border-t-[3px] border-colorA">
+  <div class="text-center font-bold text-cyan-700 py-1">INFO PILIHAN</div>
+  {
+    rows.map((item, index) => (
+      <div class="pilihan">
+        <div>
+          <span class="nomor-pilihan">{index + 1}</span>
+        </div>
+        <div class="line-clamp-2 -mt-1 text-sm">
+          <a href="/" class="link-pilihan">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            magnam soluta delectus ut! Animi sint obcaecati nesciunt odit
+            doloribus eveniet,
+          </a>
+        </div>
       </div>
-      <div class="line-clamp-2 -mt-1 text-sm">
-        <a href="/" class="link-pilihan">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          magnam soluta delectus ut! Animi sint obcaecati nesciunt odit
-          doloribus eveniet,
-        </a>
-      </div>
-    </div>
-  ))
-}
+    ))
+  }
+</div>
 <style>
-    .link-pilihan {
-      @apply line-clamp-2;
-    }
-    .pilihan {
-      @apply border-b border-gray-300 py-2 flex space-x-2 relative mt-2 leading-5;
-    }
-    .pilihan:last-child {
-      @apply border-none;
-    }
-    .nomor-pilihan {
-      @apply bg-gray-500 px-2 py-1 rounded-full text-white text-sm;
-    }
-    .link-pilihan:hover {
-      @apply underline text-colorA;
-    }
-  </style>
+  .link-pilihan {
+    @apply line-clamp-2;
+  }
+  .pilihan {
+    @apply border-b border-gray-300 py-2 flex space-x-2 relative mt-2 leading-5;
+  }
+  .pilihan:last-child {
+    @apply border-none;
+  }
+  .nomor-pilihan {
+    @apply bg-gray-500 px-2 py-1 rounded-full text-white text-sm;
+  }
+  .link-pilihan:hover {
+    @apply underline text-colorA;
+  }
+</style>
