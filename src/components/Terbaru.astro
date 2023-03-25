@@ -1,0 +1,55 @@
+---
+import { Image } from "@astrojs/image/components";
+
+const rows = [...Array(5)];
+---
+<div class="bg-gray-100 p-3">
+  {
+    rows.map((item, index) => (
+      <div class="flex space-x-4 terbaru">
+        <div class="w-1/3">
+          <Image
+            src="https://res.cloudinary.com/damatnwia/image/upload/v1679777603/blog/Google-Akan-Hapus-Aplikasi-Yang-Meminta-Akses-SMS-dan-Telp-660x330_tf9zmb.jpg"
+            width={660}
+            height={330}
+            aspectRatio="1:1"
+            format="jpg"
+            alt="Contoh"
+          />
+        </div>
+        <div class="w-2/3">
+          <div class="flex justify-between text-cyan-700 text-sm font-bold">
+            <div>Mobil</div>
+            <div>26 Maret 2023</div>
+          </div>
+          <h2 class="font-bold">
+            <a href="/detail" class="link-terbaru">Google Akan Hapus Aplikasi Yang Meminta Akses SMS dan Telp</a>
+          </h2>
+          <p class="line-clamp-2">
+            Reprehenderit voluptate sit ullamco ea velit elit. Ullamco dolore
+            cupidatat et adipisicing mollit cupidatat quis in. Ut excepteur
+            officia laboris anim id exercitation nulla aliquip eiusmod aliqua
+            exercitation dolor eiusmod. Ex dolore ex aute elit nisi voluptate
+            pariatur. Sit ex commodo cillum pariatur excepteur ad do occaecat
+            voluptate dolor in. Commodo ullamco occaecat proident enim aute quis
+            eu. Laboris ullamco adipisicing minim fugiat sit exercitation cillum
+            irure eu officia duis occaecat voluptate. Non reprehenderit tempor
+            ullamco exercitation ex. Nisi fugiat ad commodo eiusmod amet in
+            fugiat culpa ad ut elit proident.
+          </p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+<style>
+    .terbaru {
+        @apply py-3 border-b border-gray-300;
+    }
+    .terbaru:last-child {
+      @apply border-none;
+    }
+    .link-terbaru:hover {
+        @apply text-cyan-700;
+    }
+</style>
