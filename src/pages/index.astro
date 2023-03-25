@@ -1,54 +1,20 @@
 ---
 import Main from "../layouts/Main.astro";
 import { Image } from "@astrojs/image/components";
-const rows = [...Array(10)];
+import Pilihan from "../components/Pilihan.astro";
+import Headline from "../components/Headline.astro";
 ---
 
 <Main title="Berita otomotif terbaru">
   <div class="md:flex space-x-4">
     <div class="md:w-[65%] p-3 bg-colorD">
-      <div class="text-xl font-bold text-gray-700">HEADLINE</div>
-      <div class="pt-4">
-        <Image
-          src="https://res.cloudinary.com/damatnwia/image/upload/v1679586097/blog/8-aplikasi-jadwal-puasa-ramadhan-banyak-yang-gratisan-jja8uqhEim_lfd9km.jpg"
-          alt="headline"
-          aspectRatio="1:1"
-          width={724}
-          height={381}
-          format="jpg"
-        />
+      <Headline />
+      <div class="bg-gray-300 mt-4 border-t-[3px] border-colorA p-2">
+        <div class="font  -bold">INFO TERBARU</div>
       </div>
     </div>
     <div class="md:w-[35%] bg-colorD p-3 border-t-[3px] border-colorA">
-      <div class="text-center font-bold text-cyan-700 py-1">INFO PILIHANZ</div>
-      {
-        rows.map((item, index) => (
-          <div class="pilihan">
-            <div>
-              <span class="nomor-pilihan">{index + 1}</span>
-            </div>
-            <div class="line-clamp-2 -mt-1 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-              magnam soluta delectus ut! Animi sint obcaecati nesciunt odit
-              doloribus eveniet,
-            </div>
-          </div>
-        ))
-      }
+      <Pilihan />
     </div>
   </div>
 </Main>
-<style>
-  .link-pilihan {
-    @apply line-clamp-2;
-  }
-  .pilihan {
-    @apply border-b border-gray-300 py-2 flex space-x-2 relative mt-2 leading-5;
-  }
-  .pilihan:last-child {
-    @apply border-none;
-  }
-  .nomor-pilihan {
-    @apply bg-gray-500 px-2 py-1 rounded-full text-white text-sm;
-  }
-</style>
