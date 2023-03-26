@@ -1,19 +1,39 @@
 ---
 import { Image } from "@astrojs/image/components";
 ---
+
 <div class="text-xl font-bold text-gray-700">HEADLINE</div>
 <div class="pt-4">
-  <Image
-    src="https://res.cloudinary.com/damatnwia/image/upload/v1679586097/blog/8-aplikasi-jadwal-puasa-ramadhan-banyak-yang-gratisan-jja8uqhEim_lfd9km.jpg"
-    alt="headline"
-    aspectRatio="1:1"
-    width={724}
-    height={381}
-    format="jpg"
-  />
+  <a href="/" class="image-headline">
+    <Image
+      src="https://res.cloudinary.com/damatnwia/image/upload/v1679586097/blog/8-aplikasi-jadwal-puasa-ramadhan-banyak-yang-gratisan-jja8uqhEim_lfd9km.jpg"
+      alt="headline"
+      aspectRatio="1:1"
+      width={724}
+      height={381}
+      format="jpg"
+    /></a
+  >
 </div>
 <div class="text-cyan-700 font-bold py-2">MOBIL</div>
-<h1 class="text-xl font-bold">5 Hewan Mamalia Purba dengan Wujud Paling Menyeramkan</h1>
-<p class="line-clamp-2">Aute incididunt anim in velit ipsum voluptate officia ea incididunt anim velit. Occaecat veniam et amet sint. Deserunt proident cillum ipsum consectetur est occaecat officia do.
-
-Veniam ex laboris consectetur eiusmod aute in dolore ipsum. Excepteur consequat tempor eiusmod nostrud enim commodo tempor qui et commodo. Dolor nisi id adipisicing dolor. Consequat adipisicing voluptate officia officia ullamco ad magna qui aute sint in occaecat. Non exercitation magna adipisicing sint officia sunt quis nostrud id fugiat. Fugiat amet reprehenderit nisi ex amet cupidatat nostrud.</p>
+<h1 class="text-xl font-bold"><a href="/read/5-hewan-mamalia" class="link-headline">
+  5 Hewan Mamalia Purba dengan Wujud Paling Menyeramkan</a>
+</h1>
+<p class="line-clamp-2">
+  Aute incididunt anim in velit ipsum voluptate officia ea incididunt anim
+  velit. Occaecat veniam et amet sint. Deserunt proident cillum ipsum
+  consectetur est occaecat officia do. Veniam ex laboris consectetur eiusmod
+  aute in dolore ipsum. Excepteur consequat tempor eiusmod nostrud enim commodo
+  tempor qui et commodo. Dolor nisi id adipisicing dolor. Consequat adipisicing
+  voluptate officia officia ullamco ad magna qui aute sint in occaecat. Non
+  exercitation magna adipisicing sint officia sunt quis nostrud id fugiat.
+  Fugiat amet reprehenderit nisi ex amet cupidatat nostrud.
+</p>
+<style>
+  .image-headline:hover {
+    @apply invert-[.25]
+  }
+  .link-headline:hover {
+    @apply text-cyan-700;
+  }
+</style>
