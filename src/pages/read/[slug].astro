@@ -15,6 +15,10 @@ import Main from "../../layouts/Main.astro";
         <h1 class="judul">
           5 Hewan Mamalia Purba dengan Wujud Paling Menyeramkan
         </h1>
+        <div class="flex justify-between text-sm text-gray-500">
+          <div>Admin</div>
+          <div>Sunday, 26 Maret 2023</div>
+        </div>
         <Image
           src="https://res.cloudinary.com/damatnwia/image/upload/v1679586097/blog/8-aplikasi-jadwal-puasa-ramadhan-banyak-yang-gratisan-jja8uqhEim_lfd9km.jpg"
           alt="headline"
@@ -23,6 +27,38 @@ import Main from "../../layouts/Main.astro";
           height={381}
           format="jpg"
         />
+        <div class="img-note">Saat pengunjung memfoto objek</div>
+        <div class="text-gray-700 mt-4 text-normal">
+          Veniam incididunt excepteur id culpa voluptate voluptate irure ullamco
+          dolore elit. Minim do exercitation eiusmod eiusmod. Laborum laboris do
+          esse dolore minim incididunt commodo elit exercitation mollit. Do
+          magna incididunt excepteur aliqua pariatur veniam sit sit adipisicing
+          occaecat reprehenderit voluptate aute ea. Ipsum sint cillum labore
+          adipisicing culpa ea deserunt. Fugiat consequat ad ipsum velit. Quis
+          esse in tempor et commodo. Do culpa ut excepteur reprehenderit mollit
+          consequat exercitation ut. Aute deserunt qui fugiat aliqua ullamco ad
+          non non. Magna laboris proident sit aliquip velit nulla cillum
+          reprehenderit esse nostrud veniam mollit. Commodo consectetur proident
+          aute culpa consectetur Lorem eu elit excepteur id reprehenderit
+          cillum. Excepteur quis fugiat velit et commodo sit fugiat quis
+          pariatur ea veniam qui commodo. Est eiusmod cillum laboris anim in
+          tempor occaecat dolor nostrud. Laboris officia culpa dolor laborum ad
+          in in. Nostrud aliquip esse eu sunt ea velit qui dolor aliqua ea
+          consequat cillum. Anim officia mollit ex laboris anim in exercitation
+          officia. Culpa irure officia esse culpa aliquip nulla quis incididunt
+          excepteur aliqua. Proident velit dolore et minim ut laboris est non
+          sit consectetur consectetur excepteur minim nulla. Irure nisi est sunt
+          ea labore voluptate ipsum ad ut eu. Reprehenderit adipisicing minim
+          duis aute irure incididunt officia dolor dolore. Tempor Lorem ullamco
+          Lorem cillum occaecat. Exercitation amet pariatur est exercitation
+          laborum velit amet aliquip aliqua magna voluptate consectetur aliquip.
+          Quis Lorem officia aute ut velit sit cupidatat ex nulla. Labore
+          consectetur aliqua consectetur do ad mollit minim adipisicing labore
+          tempor non commodo. Deserunt mollit nostrud commodo ut consequat nulla
+          id ipsum consequat incididunt elit laborum. Et pariatur incididunt
+          mollit nisi nisi officia excepteur id adipisicing. Ipsum irure velit
+          dolore nulla laborum minim consequat. Proident elit duis culpa ea.
+        </div>
       </div>
     </div>
     <div class="md:w-[30%] m-2 md:m-0">
@@ -39,9 +75,12 @@ import Main from "../../layouts/Main.astro";
     @apply text-cyan-700;
   }
   .judul {
-    @apply md:text-3xl font-bold text-gray-700;
+    @apply md:text-3xl font-bold text-gray-700 py-4;
   }
   .content {
     @apply mt-4;
+  }
+  .img-note {
+    @apply text-sm italic text-gray-500;
   }
 </style>
