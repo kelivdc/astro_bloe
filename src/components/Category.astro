@@ -1,12 +1,12 @@
 ---
-
+const response = await fetch(import.meta.env.SERVER + '/categories');
+const categories = await response.json();
 ---
 <div class="pt-4">
     <ul class="flex bg-cyan-700">
-        <li class="cat-list"><a href="/category/mobil">Mobil</a></li>
-        <li class="cat-list"><a href="/category/motor">Motor</a></li>
-        <li class="cat-list"><a href="/category/bengkel">Bengkel</a></li>
-        <li class="cat-list"><a href="/category/tips">Tips n Trick</a></li>
+        {categories.map((item)=> (      
+            <li class="cat-list"><a href={'/category/' + item.slug}>{item.name}</a></li>
+        ))}
     </ul>    
 </div>
 <style >

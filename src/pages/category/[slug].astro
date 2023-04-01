@@ -1,8 +1,69 @@
 ---
+import { Image } from "@astrojs/image/components";
+import Pilihan from "../../components/Pilihan.astro";
+import TipsPilihan from "../../components/TipsPilihan.astro";
 import Main from "../../layouts/Main.astro";
-
-const { slug } = Astro.params
+const { slug } = Astro.params;
+const response = await fetch(import.meta.env.SERVER + "/categories/" + slug);
+const result = await response.json();
 ---
-<Main title={slug}>
-    Category {slug}
+
+<Main title={result.title} description={result.description}>
+  <div class="md:flex md:space-x-4">
+    <div class="md:w-[70%] p-2 md:p-0">
+      <div class="breadcrumb">
+        <a href="/">HOME</a> / {result.name}
+      </div>
+      <div class="content">
+        <h1 class="md:text-3xl py-4 text-cyan-600 font-bold">
+          Category {result.name}
+        </h1>        
+        {result.post.length > 0 ? (
+          <div class="grid grid-cols-2 gap-2">
+          {result.post.map((item) => (
+            <div>
+              <a href={'/read/'+item.slug} class="image-headline">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  aspectRatio="1:1"
+                  width={724}
+                  height={381}
+                  format="jpg"
+                  title={item.title}
+                  class="hover:invert-[.25]"
+                />
+                </a>
+                <div class="flex justify-between text-sm text-cyan-700">
+                  <div>Admin</div>
+                  <div>{item.updated_at}</div>
+                </div>
+              <h2 class="judul"><a href={'/read/'+item.slug}>{item.title}</a></h2>
+            </div>
+          ))}
+          </div>
+        ) : (
+          <div class="text-center">- Belum ada post untuk category ini -</div>
+        )}       
+      </div>
+    </div>
+    <div class="md:w-[30%] m-2 md:m-0">
+      <Pilihan />
+      <TipsPilihan />
+    </div>
+  </div>
 </Main>
+<style>
+  .breadcrumb {
+    @apply border-b border-gray-300 pb-3 font-bold text-gray-500;
+  }
+  .breadcrumb a:hover {
+    @apply text-cyan-700;
+  }
+  .judul {
+    @apply font-bold text-gray-800 py-2 block;
+  }
+  .judul:hover {
+    @apply text-gray-500;
+  }
+</style>
